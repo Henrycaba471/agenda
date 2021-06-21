@@ -34,7 +34,7 @@ const ajax = (options) => {
 const getContact = () => {
     ajax({
         method: 'GET',
-        url: 'https://github.com/Henrycaba471/agenda/blob/gh-pages/db_agenda.mockend.json',
+        url: 'https://my-json-server.typicode.com/Henrycaba471/mockjson/db',
         succes: (res) => {
             res.forEach(contact => {
                 $template.querySelector('.nombre').textContent = contact.nombre;
@@ -69,7 +69,7 @@ d.addEventListener('submit', (e) => {
 
         if (!e.target.id.value) {
             ajax({
-                url: 'https://github.com/Henrycaba471/agenda/blob/gh-pages/db_agenda.mockend.json',
+                url: 'https://my-json-server.typicode.com/Henrycaba471/mockjson/db',
                 method: 'POST',
                 succes: (res) => {
                     location.reload();
@@ -86,7 +86,7 @@ d.addEventListener('submit', (e) => {
             });
         } else {
             ajax({
-                url: `https://github.com/Henrycaba471/agenda/blob/gh-pages/db_agenda.mockend.json/${e.target.id.value}`,
+                url: `https://my-json-server.typicode.com/Henrycaba471/mockjson/db/${e.target.id.value}`,
                 method: 'PUT',
                 succes: (res) => {
                     location.reload()
@@ -121,7 +121,7 @@ d.addEventListener('click', (e) => {
 
         if (eliminar) {
             ajax({
-                url: `https://github.com/Henrycaba471/agenda/blob/gh-pages/db_agenda.mockend.json/${e.target.dataset.id}`,
+                url: `https://my-json-server.typicode.com/Henrycaba471/mockjson/db/${e.target.dataset.id}`,
                 method: 'DELETE',
                 succes: (res) => {
                     location.reload();
