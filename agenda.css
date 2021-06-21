@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(209, 197, 25);
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.cont{
+    width: auto;
+    height: calc(100vh - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cont .box{
+    background-color: rgb(62, 158, 126, 0.4);
+    width: 550px;
+    height: 350px;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cont .box .lista-contactos a{
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(209, 197, 25);
+}
+
+.cont .box .lista-contactos a:hover{
+    color: rgb(209, 197, 25, 0.5);
+}
+
+footer{
+    height: 30px;
+    background-color: rgb(62, 158, 126, 0.4);
+    text-align: right;
+    font-weight: bold;
+    line-height: 30px;
+    padding-right: 30px;
+    color: rgb(0, 0, 0, 0.5);
+}

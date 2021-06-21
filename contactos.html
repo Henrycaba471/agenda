@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactos.css">
+    <link rel="icon" href="assets/img/agenda.png" type="image/x-icon">
+    <title>Contactos</title>
+</head>
+<body>
+    <div class="cont">
+        <header class="box">
+            <h1>Contactos</h1>
+            <a href="agenda.html">Inicio</a>
+        </header>
+        <!--Tabla y formulario-->
+        <div class="cont-tabla-regidstro">
+            <div class="tabla">
+                <table class="lista-contactos">
+                    <thead>
+                        <tr>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="formulario">
+                <h2 class="title">Registrar Contacto</h2>
+                <form action="" class="form-registro">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" name="nombre" required>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellido">
+                    <label for="telefono">Tel:</label>
+                    <input type="number" id="tel" name="telefono" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                    <input type="submit" value="Registrar" id="enviar">
+                    <input type="hidden" name="id">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created by: Henry CB</p>
+    </footer>
+    <template id="crud-template">
+        <tr>
+            <td class="nombre">Henry</td>
+            <td class="apellido">Cañizares</td>
+            <td class="telefono">3103743563</td>
+            <td class="email">henrycaba471@gmail.com</td>
+            <td class="acciones">
+                <button><img class="editar" title="Editar" src="assets/img/editar.png" alt="Editar" width="27px"></button>
+                <button><img class="eliminar" title="Eliminar" src="assets/img/eliminar.png" alt="Eliminar" width="27"></button>
+            </td>
+        </tr>
+    </template>
+    <script src="agenda.js"></script>
+</body>
+</html>
