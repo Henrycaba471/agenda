@@ -36,7 +36,7 @@ const getContact = () => {
         method: 'GET',
         url: 'https://my-json-server.typicode.com/Henrycaba471/mockjson/db',
         succes: (res) => {
-            res.forEach(contact => {
+            res.contactos.forEach(contact => {
                 $template.querySelector('.nombre').textContent = contact.nombre;
                 $template.querySelector('.apellido').textContent = contact.apellido;
                 $template.querySelector('.telefono').textContent = contact.telefono;
