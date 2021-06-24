@@ -69,7 +69,7 @@ d.addEventListener('submit', (e) => {
 
         if (!e.target.id.value) {
             ajax({
-                url: 'https://my-json-server.typicode.com/Henrycaba471/mockjson/db',
+                url: 'https://my-json-server.typicode.com/Henrycaba471/mockjson/contactos',
                 method: 'POST',
                 succes: (res) => {
                     location.reload();
@@ -86,7 +86,7 @@ d.addEventListener('submit', (e) => {
             });
         } else {
             ajax({
-                url: `https://my-json-server.typicode.com/Henrycaba471/mockjson/db/${e.target.id.value}`,
+                url: `https://my-json-server.typicode.com/Henrycaba471/mockjson/contactos/${e.target.id.value}`,
                 method: 'PUT',
                 succes: (res) => {
                     location.reload()
@@ -121,7 +121,7 @@ d.addEventListener('click', (e) => {
 
         if (eliminar) {
             ajax({
-                url: `https://my-json-server.typicode.com/Henrycaba471/mockjson/db/${e.target.dataset.id}`,
+                url: `https://my-json-server.typicode.com/Henrycaba471/mockjson/contactos/${e.target.dataset.id}`,
                 method: 'DELETE',
                 succes: (res) => {
                     location.reload();
@@ -131,6 +131,8 @@ d.addEventListener('click', (e) => {
                 }
             });
         }
+
+
     }
 
 });
